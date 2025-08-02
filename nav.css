@@ -1,0 +1,153 @@
+/* Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 430px;
+    background: rgba(211, 211, 211, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #333;
+}
+
+.nav-item.active {
+    color: #15803D;
+}
+
+.nav-item.active .nav-icon {
+    fill: #15803D;
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+.nav-item span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.delivery-button {
+    background-color: #15803D;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delivery-button svg {
+    width: 24px;
+    height: 24px;
+    fill: #FFF;
+}
+
+/* Responsive Design */
+@media (max-width: 430px) {
+    .app {
+        max-width: 100%;
+    }
+    
+    .header {
+        padding: 12px 16px;
+    }
+    
+    .section {
+        padding: 0 16px;
+    }
+    
+    .bottom-nav {
+        padding: 12px 16px;
+    }
+}
+
+@media (min-width: 431px) {
+    .app {
+        border: 1px solid #ddd;
+        margin-top: 20px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+}
+
+/* Hover Effects */
+@media (hover: hover) {
+    .market-card:hover {
+        transform: translateY(-2px);
+        transition: transform 0.2s ease;
+    }
+    
+    .shop-card:hover {
+        transform: translateY(-2px);
+        transition: transform 0.2s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-item:hover {
+        color: #15803D;
+        cursor: pointer;
+    }
+    
+    .delivery-button:hover {
+        background-color: #0f5a2b;
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: all 0.2s ease;
+    }
+}
+
+/* Loading States */
+.market-image,
+.shop-image {
+    transition: opacity 0.3s ease;
+}
+
+.market-image:not([src]),
+.shop-image:not([src]) {
+    opacity: 0;
+    background-color: #f0f0f0;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus States */
+.search-input:focus,
+.nav-item:focus {
+    outline: 2px solid #15803D;
+    outline-offset: 2px;
+}
+
+/* High Contrast Support */
+@media (prefers-contrast: high) {
+    .market-overlay {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .bottom-nav {
+        background: rgba(255, 255, 255, 0.95);
+        border-top: 1px solid #333;
+    }
+}

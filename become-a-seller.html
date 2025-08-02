@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="loading.css" />
+    <title>Become a Seller</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f9fafb;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        overflow-y: auto;
+      }
+      .container {
+        width: 100%;
+        max-width: 430px;
+        background-color: #f9fafb;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Desktop Blocker Screen -->
+    <div class="desktop-blocker" id="desktopBlocker" style="display: none">
+      <div class="logo-section">
+        <img src="/images/1.png" alt="Trade NG Logo" />
+      </div>
+      <h1>TRADE NG</h1>
+      <p class="subtitle">This app is designed for mobile devices only.</p>
+      <p class="description">
+        Please access this application from your mobile device for the best
+        experience.
+      </p>
+    </div>
+    <div class="container" id="mainContent" style="overflow-y: auto">
+      <div class="header">
+        <a href="signup.html" class="back-button">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.0003 15.8334L4.16699 10.0001L10.0003 4.16675"
+              stroke="#4B5563"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M15.8337 10H4.16699"
+              stroke="#4B5563"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </a>
+        <h1>Become a Seller</h1>
+      </div>
+      <div class="main-content">
+        <form id="seller-form">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input
+              type="text"
+              id="full-name"
+              placeholder="Enter your full name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="business-name">Business Name</label>
+            <input
+              type="text"
+              id="business-name"
+              placeholder="Enter your business name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email-phone">Email or phone number</label>
+            <input
+              type="text"
+              id="email-phone"
+              placeholder="Enter your email or phone number"
+            />
+          </div>
+          <div class="identity-verification">
+            <h2>Identity Verification</h2>
+            <div class="upload-group">
+              <div>
+                <h3>Personal ID</h3>
+                <p>Upload your ID card, passport or driver's license</p>
+              </div>
+              <input type="file" id="personal-id-file" style="display: none" />
+              <button type="button" class="btn-upload" id="personal-id-upload">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.667 2.5V12.5"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M14.8333 6.66667L10.6667 2.5L6.5 6.66667"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M18.167 12.5V15.8333C18.167 16.2754 17.9914 16.6993 17.6788 17.0118C17.3663 17.3244 16.9424 17.5 16.5003 17.5H4.83366C4.39163 17.5 3.96771 17.3244 3.65515 17.0118C3.34259 16.6993 3.16699 16.2754 3.16699 15.8333V12.5"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="upload-group">
+              <div>
+                <h3>Business Location</h3>
+                <p>Upload proof of your business location</p>
+              </div>
+              <input
+                type="file"
+                id="business-location-file"
+                style="display: none"
+              />
+              <button
+                type="button"
+                class="btn-upload"
+                id="business-location-upload"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.667 2.5V12.5"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M14.8333 6.66667L10.6667 2.5L6.5 6.66667"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M18.167 12.5V15.8333C18.167 16.2754 17.9914 16.6993 17.6788 17.0118C17.3663 17.3244 16.9424 17.5 16.5003 17.5H4.83366C4.39163 17.5 3.96771 17.3244 3.65515 17.0118C3.34259 16.6993 3.16699 16.2754 3.16699 15.8333V12.5"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="seller-features">
+            <h2>Seller Features</h2>
+            <div class="feature-card">
+              <h3>Upload Products</h3>
+              <p>Add your products to the marketplace</p>
+            </div>
+            <div class="feature-card">
+              <h3>Go Live</h3>
+              <p>Sell your products through live video</p>
+            </div>
+            <div class="feature-card">
+              <h3>Negotiate</h3>
+              <p>Chat with buyers directly</p>
+            </div>
+            <div class="feature-card">
+              <h3>Fulfil Orders</h3>
+              <p>Manage and complete customers order</p>
+            </div>
+          </div>
+          <button type="submit" class="btn-primary">Submit Application</button>
+        </form>
+      </div>
+    </div>
+    <script src="signup.js"></script>
+    <script>
+      function isMobileDevice() {
+        return window.innerWidth <= 768;
+      }
+      function checkDevice() {
+        var desktopBlocker = document.getElementById("desktopBlocker");
+        var mainContent = document.getElementById("mainContent");
+        if (isMobileDevice()) {
+          desktopBlocker.style.display = "none";
+          mainContent.style.display = "block";
+        } else {
+          desktopBlocker.style.display = "flex";
+          mainContent.style.display = "none";
+        }
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        checkDevice();
+        // Upload button logic
+        let personalBtn = document.getElementById("personal-id-upload");
+        let personalFile = document.getElementById("personal-id-file");
+        let businessBtn = document.getElementById("business-location-upload");
+        let businessFile = document.getElementById("business-location-file");
+
+        personalBtn.addEventListener("click", function () {
+          personalFile.click();
+        });
+        businessBtn.addEventListener("click", function () {
+          businessFile.click();
+        });
+
+        personalFile.addEventListener("change", function () {
+          var label = document.getElementById("personal-id-label");
+          if (!label) {
+            label = document.createElement("div");
+            label.id = "personal-id-label";
+            label.style.fontSize = "0.75rem";
+            label.style.color = "#6B7280";
+            label.style.marginTop = "0.25rem";
+            label.style.fontStyle = "italic";
+            personalBtn.parentNode.appendChild(label);
+          }
+          label.textContent = personalFile.files.length
+            ? personalFile.files[0].name
+            : "";
+        });
+        businessFile.addEventListener("change", function () {
+          var label = document.getElementById("business-location-label");
+          if (!label) {
+            label = document.createElement("div");
+            label.id = "business-location-label";
+            label.style.fontSize = "0.75rem";
+            label.style.color = "#6B7280";
+            label.style.marginTop = "0.25rem";
+            label.style.fontStyle = "italic";
+            businessBtn.parentNode.appendChild(label);
+          }
+          label.textContent = businessFile.files.length
+            ? businessFile.files[0].name
+            : "";
+        });
+      });
+      window.addEventListener("resize", checkDevice);
+    </script>
+  </body>
+</html>
