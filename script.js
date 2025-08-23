@@ -86,32 +86,32 @@ document.addEventListener(
 const onboardingScreens = [
   {
     id: 1,
-    backgroundImage: "/images/2.png",
+    backgroundImage: "images/2.png",
     title: "Connect with Trusted Sellers",
     subtitle:
       "Connect with verified sellers from real markets across Nigeria. Buy, sell, and discover products from trusted vendors.",
     logo: {
-      src: "/images/1.png",
+      src: "images/1.png",
       className: "logo-1",
     },
   },
   {
     id: 2,
-    backgroundImage: "/images/3.png",
+    backgroundImage: "images/3.png",
     title: "Message Sellers. Make Offers",
     subtitle: "Chat directly with sellers to negotiate prices",
     logo: {
-      src: "/images/1.5.png",
+      src: "images/1.5.png",
       className: "logo-2",
     },
   },
   {
     id: 3,
-    backgroundImage: "/images/4.png",
+    backgroundImage: "images/4.png",
     title: "Join the Live Shopping Experience",
     subtitle: "Watch live streams from your favorite shops",
     logo: {
-      src: "/images/1.5.png",
+      src: "images/1.5.png",
       className: "logo-3",
     },
   },
