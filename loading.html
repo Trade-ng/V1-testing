@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trade NG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loading-container" id="loadingScreen">
+      <div class="home-indicator"></div>
+      <div class="logo-container">
+        <img id="logo" class="logo" src="images/1.png" alt="Trade NG Logo" />
+        <div id="brandText" class="brand-text">
+          <h1>TRADE NG</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Desktop Blocker Screen -->
+    <div class="desktop-blocker" id="desktopBlocker">
+      <div class="logo-section">
+        <img src="images/1.png" alt="Trade NG Logo" />
+      </div>
+      <h1>TRADE NG</h1>
+      <p class="subtitle">This app is designed for mobile devices only.</p>
+      <p class="description">
+        Please access this application from your mobile device for the best
+        experience.
+      </p>
+    </div>
+
+    <!-- Advertise section -->
+
+    <div id="app" class="relative w-full h-screen overflow-hidden bg-gray-900">
+      <!-- Background Image with Overlay -->
+      <div
+        id="background-image"
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+      ></div>
+      <div class="absolute inset-0 bg-black bg-opacity-50 brightness-70"></div>
+
+      <!-- Skip Button -->
+      <button
+        id="skip-button"
+        class="absolute top-4 right-4 md:top-6 md:right-6 z-20 px-[10px] py-[10px] text-white font-['Poppins'] font-bold text-[20px] hover:bg-white hover:bg-opacity-10 rounded-lg transition-colors"
+      >
+        SKIP
+      </button>
+
+      <!-- Logo -->
+      <img id="logo" alt="Trade NG Logo" />
+
+      <!-- Content Container -->
+      <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8 pb-12 md:pb-16">
+        <div class="max-w-md mx-auto flex flex-col items-center gap-6 md:gap-8">
+          <!-- Title and Subtitle -->
+          <div class="text-center text-white space-y-4 md:space-y-6">
+            <h1
+              id="title"
+              class="text-[30px] md:text-[32px] font-bold leading-[36px] md:leading-[38px] tracking-tight font-['Poppins'] px-4"
+            ></h1>
+            <p
+              id="subtitle"
+              class="text-[20px] md:text-[18px] leading-[22px] md:leading-[24px] opacity-90 px-6 md:px-8 font-['Poppins'] font-bold"
+            ></p>
+          </div>
+
+          <!-- Pagination Dots -->
+          <div id="pagination-dots" class="flex items-center gap-3"></div>
+
+          <!-- Next Button -->
+          <button
+            id="next-button"
+            class="w-full max-w-sm bg-trade-green-700 hover:bg-trade-green-500 text-white font-work-sans font-medium text-[16px] py-[12px] md:py-[14px] px-6 rounded-[8px] transition-colors duration-200 active:scale-95 transform"
+          >
+            Next
+          </button>
+        </div>
+
+        <!-- Home Indicator (iOS style) -->
+        <div class="flex justify-center mt-6 md:mt-8">
+          <div class="w-36 h-1.5 bg-white bg-opacity-90 rounded-full"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
