@@ -649,3 +649,50 @@ body {
         border-top: 1px solid #333;
     }
 }
+
+
+/* Bottom navigation from seller section */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(244, 244, 244, 0.3);
+  padding: 12px 20px;
+  z-index: 50;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.nav-item.active {
+  color: #15803D;
+}
+
+.nav-item span {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.nav-item:nth-child(5) {
+  background-color: #15803D;
+  border-radius: 50%;
+  padding: 12px;
+  color: white;
+}
