@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trade NG - Marketplace</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Desktop Blocker Screen -->
+    <div class="desktop-blocker" id="desktopBlocker">
+      <div class="logo-section">
+        <img src="images/1.png" alt="Trade NG Logo" />
+      </div>
+      <h1>TRADE NG</h1>
+      <p class="subtitle">This app is designed for mobile devices only.</p>
+      <p class="description">
+        Please access this application from your mobile device for the best
+        experience.
+      </p>
+    </div>
+    <!-- Main App -->
+    <div class="app">
+      <div class="container">
+        <!-- Header -->
+        <header class="header">
+          <div class="header-left">
+            <button id="backButton" class="back-button hidden">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M15 18L9 12L15 6"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <div id="brandContainer">
+              <div class="header-left">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/4bd6d4d6ceaaef9f7b82019b8732bb1dfce5a279?width=48"
+                  alt="Trade NG Logo"
+                  class="logo"
+                />
+                <span class="brand-text">TRADE NG</span>
+              </div>
+            </div>
+
+            <span id="pageTitle" class="page-title hidden"></span>
+          </div>
+
+          <div id="headerActions" class="header-right">
+            <button class="header-button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M10.146 3.24792C10.2954 2.87864 10.5517 2.56238 10.882 2.3397C11.2124 2.11701 11.6017 1.99805 12 1.99805C12.3984 1.99805 12.7877 2.11701 13.118 2.3397C13.4483 2.56238 13.7046 2.87864 13.854 3.24792C15.333 3.65416 16.6377 4.53491 17.5674 5.75479C18.4971 6.97467 19.0005 8.46614 19 9.99992V14.6969L20.832 17.4449C20.9325 17.5955 20.9902 17.7706 20.999 17.9514C21.0078 18.1322 20.9673 18.3121 20.8819 18.4717C20.7965 18.6313 20.6693 18.7648 20.514 18.8578C20.3587 18.9508 20.1811 19 20 18.9999H15.465C15.3446 19.833 14.9281 20.5949 14.2917 21.1459C13.6554 21.6969 12.8418 22.0001 12 22.0001C11.1583 22.0001 10.3447 21.6969 9.70833 21.1459C9.07197 20.5949 8.65543 19.833 8.53503 18.9999H4.00003C3.81898 19 3.64133 18.9508 3.48602 18.8578C3.33071 18.7648 3.20356 18.6313 3.11815 18.4717C3.03274 18.3121 2.99227 18.1322 3.00106 17.9514C3.00984 17.7706 3.06755 17.5955 3.16803 17.4449L5.00003 14.6969V9.99992C5.00003 6.77592 7.18003 4.05992 10.146 3.24792Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+            <button class="header-button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M17 18C17.5304 18 18.0391 18.2107 18.4142 18.5858C18.7893 18.9609 19 19.4696 19 20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20C15 18.89 15.89 18 17 18ZM1 2H4.27L5.21 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.17 20.95 5.34 20.88 5.5L17.3 11.97C16.96 12.58 16.3 13 15.55 13H8.1L7.2 14.63L7.17 14.75C7.17 14.8163 7.19634 14.8799 7.24322 14.9268C7.29011 14.9737 7.3537 15 7.42 15H19V17H7C6.46957 17 5.96086 16.7893 5.58579 16.4142C5.21071 16.0391 5 15.5304 5 15C5 14.65 5.09 14.32 5.24 14.04L6.6 11.59L3 4H1V2ZM7 18C7.53043 18 8.03914 18.2107 8.41421 18.5858C8.78929 18.9609 9 19.4696 9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20C5 18.89 5.89 18 7 18Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+            <button class="header-button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M4 18C4 16.9391 4.42143 15.9217 5.17157 15.1716C5.92172 14.4214 6.93913 14 8 14H16C17.0609 14 18.0783 14.4214 18.8284 15.1716C19.5786 15.9217 20 16.9391 20 18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18Z"
+                  stroke="#333333"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 10C13.6569 10 15 8.65685 15 7C15 5.34315 13.6569 4 12 4C10.3431 4 9 5.34315 9 7C9 8.65685 10.3431 10 12 10Z"
+                  stroke="#333333"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+          <!-- Home Page - Marketplace -->
+          <div id="homePage" class="page">
+            <div class="marketplace-container">
+              <!-- Search Bar -->
+              <div class="search-container">
+                <div class="search-bar">
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search markets, shops, products..."
+                  />
+                  <svg
+                    class="search-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M19.4846 20.154L13.2226 13.892C12.7226 14.318 12.1476 14.6477 11.4976 14.881C10.8476 15.1144 10.1943 15.231 9.53762 15.231C7.93628 15.231 6.58095 14.6767 5.47162 13.568C4.36228 12.4594 3.80762 11.1044 3.80762 9.50305C3.80762 7.90171 4.36162 6.54605 5.46962 5.43605C6.57762 4.32605 7.93228 3.77038 9.53362 3.76905C11.135 3.76771 12.491 4.32238 13.6016 5.43305C14.7123 6.54371 15.2676 7.89938 15.2676 9.50005C15.2676 10.1947 15.1446 10.867 14.8986 11.517C14.6526 12.167 14.3293 12.723 13.9286 13.185L20.1906 19.446L19.4846 20.154Z"
+                      fill="#CCCCCC"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Featured Markets Section -->
+              <div class="section-header">
+                <h2 class="section-title">Featured Markets</h2>
+                <a href="#" class="view-all">View All</a>
+              </div>
+
+              <div class="markets-grid">
+                <!-- Alaba International Market -->
+                <div class="market-card">
+                  <img
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/09622b286d9f6ba66c2aaa2ad9a25e286c88e755?width=762"
+                    alt="Alaba International Market"
+                  />
+                  <div class="market-overlay">
+                    <h3 class="market-title">Alaba International Market</h3>
+                  </div>
+                </div>
+                <div class="market-info">
+                  <div class="market-location">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M11.6663 5.83366C11.6663 8.74624 8.43526 11.7796 7.35026 12.7164C7.24918 12.7924 7.12614 12.8335 6.99967 12.8335C6.87321 12.8335 6.75017 12.7924 6.64909 12.7164C5.56409 11.7796 2.33301 8.74624 2.33301 5.83366C2.33301 4.59598 2.82467 3.409 3.69984 2.53383C4.57501 1.65866 5.762 1.16699 6.99967 1.16699C8.23735 1.16699 9.42434 1.65866 10.2995 2.53383C11.1747 3.409 11.6663 4.59598 11.6663 5.83366Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7 7.58301C7.9665 7.58301 8.75 6.79951 8.75 5.83301C8.75 4.86651 7.9665 4.08301 7 4.08301C6.0335 4.08301 5.25 4.86651 5.25 5.83301C5.25 6.79951 6.0335 7.58301 7 7.58301Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="location-text">Lagos State</span>
+                  </div>
+                  <div class="market-stats">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none">
+                      <path
+                        d="M9.33366 12.917V11.7503C9.33366 11.1315 9.08783 10.538 8.65024 10.1004C8.21266 9.66283 7.61916 9.41699 7.00033 9.41699H3.50033C2.88149 9.41699 2.28799 9.66283 1.85041 10.1004C1.41282 10.538 1.16699 11.1315 1.16699 11.7503V12.917"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.25033 7.08366C6.53899 7.08366 7.58366 6.03899 7.58366 4.75033C7.58366 3.46166 6.53899 2.41699 5.25033 2.41699C3.96166 2.41699 2.91699 3.46166 2.91699 4.75033C2.91699 6.03899 3.96166 7.08366 5.25033 7.08366Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="stats-text">1240 verified shops</span>
+                  </div>
+                </div>
+
+                <!-- Ariaria International Market -->
+                <div class="market-card">
+                  <img
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/77d82df3c4fae7a20c43b64cc7078869cfefa7f3?width=762"
+                    alt="Ariaria International Market"
+                  />
+                  <div class="market-overlay">
+                    <h3 class="market-title">Ariaria International Market</h3>
+                  </div>
+                </div>
+                <div class="market-info">
+                  <div class="market-location">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M11.6663 5.83366C11.6663 8.74624 8.43526 11.7796 7.35026 12.7164C7.24918 12.7924 7.12614 12.8335 6.99967 12.8335C6.87321 12.8335 6.75017 12.7924 6.64909 12.7164C5.56409 11.7796 2.33301 8.74624 2.33301 5.83366C2.33301 4.59598 2.82467 3.409 3.69984 2.53383C4.57501 1.65866 5.762 1.16699 6.99967 1.16699C8.23735 1.16699 9.42434 1.65866 10.2995 2.53383C11.1747 3.409 11.6663 4.59598 11.6663 5.83366Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7 7.58301C7.9665 7.58301 8.75 6.79951 8.75 5.83301C8.75 4.86651 7.9665 4.08301 7 4.08301C6.0335 4.08301 5.25 4.86651 5.25 5.83301C5.25 6.79951 6.0335 7.58301 7 7.58301Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="location-text">Aba, Abia State</span>
+                  </div>
+                  <div class="market-stats">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M9.33366 12.25V11.0833C9.33366 10.4645 9.08783 9.871 8.65024 9.43342C8.21266 8.99583 7.61916 8.75 7.00033 8.75H3.50033C2.88149 8.75 2.28799 8.99583 1.85041 9.43342C1.41282 9.871 1.16699 10.4645 1.16699 11.0833V12.25"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.25033 6.41667C6.53899 6.41667 7.58366 5.372 7.58366 4.08333C7.58366 2.79467 6.53899 1.75 5.25033 1.75C3.96166 1.75 2.91699 2.79467 2.91699 4.08333C2.91699 5.372 3.96166 6.41667 5.25033 6.41667Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="stats-text">1070 verified shops</span>
+                  </div>
+                </div>
+
+                <!-- Onitsha Main Market -->
+                <div class="market-card">
+                  <img
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/5bdf08f140c563b1f2b5d5d4296e28415f10f563?width=762"
+                    alt="Onitsha Main Market"
+                  />
+                  <div class="market-overlay">
+                    <h3 class="market-title">Onitsha Main Market</h3>
+                  </div>
+                </div>
+                <div class="market-info">
+                  <div class="market-location">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M11.6663 5.83366C11.6663 8.74624 8.43526 11.7796 7.35026 12.7164C7.24918 12.7924 7.12614 12.8335 6.99967 12.8335C6.87321 12.8335 6.75017 12.7924 6.64909 12.7164C5.56409 11.7796 2.33301 8.74624 2.33301 5.83366C2.33301 4.59598 2.82467 3.409 3.69984 2.53383C4.57501 1.65866 5.762 1.16699 6.99967 1.16699C8.23735 1.16699 9.42434 1.65866 10.2995 2.53383C11.1747 3.409 11.6663 4.59598 11.6663 5.83366Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7 7.58301C7.9665 7.58301 8.75 6.79951 8.75 5.83301C8.75 4.86651 7.9665 4.08301 7 4.08301C6.0335 4.08301 5.25 4.86651 5.25 5.83301C5.25 6.79951 6.0335 7.58301 7 7.58301Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="location-text">Anambra State</span>
+                  </div>
+                  <div class="market-stats">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none">
+                      <path
+                        d="M9.33366 12.583V11.4163C9.33366 10.7975 9.08783 10.204 8.65024 9.76643C8.21266 9.32884 7.61916 9.08301 7.00033 9.08301H3.50033C2.88149 9.08301 2.28799 9.32884 1.85041 9.76643C1.41282 10.204 1.16699 10.7975 1.16699 11.4163V12.583"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.25033 6.74967C6.53899 6.74967 7.58366 5.70501 7.58366 4.41634C7.58366 3.12768 6.53899 2.08301 5.25033 2.08301C3.96166 2.08301 2.91699 3.12768 2.91699 4.41634C2.91699 5.70501 3.96166 6.74967 5.25033 6.74967Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="stats-text">1240 verified shops</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Live Now Section -->
+              <div class="live-section">
+                <div class="live-header">
+                  <div class="live-title-container">
+                    <h2 class="live-title">Live Now</h2>
+                    <div class="live-dot"></div>
+                  </div>
+                  <a href="#" class="view-all">View All</a>
+                </div>
+
+                <div class="live-grid">
+                  <!-- TechHub Electronics Live -->
+                  <div class="live-item">
+                    <div style="position: relative">
+                      <img
+                        src="https://api.builder.io/api/v1/image/assets/TEMP/1258b6436c21871ff38a84a40e319d89e6939d46?width=758"
+                        alt="TechHub Electronics Live"
+                        class="live-thumbnail"
+                      />
+                      <div class="live-badge">
+                        <div class="live-badge-dot"></div>
+                        <span>LIVE</span>
+                      </div>
+                    </div>
+                    <div class="live-content">
+                      <h3 class="live-shop-name">
+                        TechHub Electronics
+                        <svg
+                          class="verified-icon"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M4 12.9L7.143 16.5L15 7.5M20 7.563L11.428 16.563L11 16"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </h3>
+                      <p class="live-description">
+                        Quality phones, laptops and accessories at the best
+                      </p>
+                      <div class="live-location">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M11.6663 5.83366C11.6663 8.74624 8.43526 11.7796 7.35026 12.7164C7.24918 12.7924 7.12614 12.8335 6.99967 12.8335C6.87321 12.8335 6.75017 12.7924 6.64909 12.7164C5.56409 11.7796 2.33301 8.74624 2.33301 5.83366C2.33301 4.59598 2.82467 3.409 3.69984 2.53383C4.57501 1.65866 5.762 1.16699 6.99967 1.16699C8.23735 1.16699 9.42434 1.65866 10.2995 2.53383C11.1747 3.409 11.6663 4.59598 11.6663 5.83366Z"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7 7.58301C7.9665 7.58301 8.75 6.79951 8.75 5.83301C8.75 4.86651 7.9665 4.08301 7 4.08301C6.0335 4.08301 5.25 4.86651 5.25 5.83301C5.25 6.79951 6.0335 7.58301 7 7.58301Z"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span class="live-location-text"
+                          >Alaba, Lagos State</span
+                        >
+                      </div>
+                      <div class="live-rating">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.72331 1.33901C6.74888 1.28737 6.78837 1.24389 6.83733 1.21349C6.88629 1.1831 6.94277 1.16699 7.0004 1.16699C7.05803 1.16699 7.11451 1.1831 7.16347 1.21349C7.21243 1.24389 7.25192 1.28737 7.27748 1.33901L8.62498 4.06843C8.71375 4.24808 8.84479 4.4035 9.00685 4.52136C9.1689 4.63922 9.35714 4.716 9.5554 4.7451L12.5689 5.1861C12.626 5.19437 12.6796 5.21846 12.7238 5.25563C12.7679 5.2928 12.8007 5.34158 12.8186 5.39645C12.8364 5.45132 12.8386 5.51008 12.8247 5.5661C12.8109 5.62212 12.7817 5.67315 12.7404 5.71343L10.5611 7.8356C10.4173 7.97566 10.3098 8.14854 10.2477 8.33938C10.1856 8.53022 10.1709 8.73328 10.2046 8.9311L10.7191 11.9294C10.7292 11.9865 10.7231 12.0453 10.7014 12.099C10.6796 12.1527 10.6433 12.1993 10.5964 12.2333C10.5495 12.2674 10.494 12.2876 10.4362 12.2916C10.3783 12.2956 10.3206 12.2833 10.2694 12.2561L7.57557 10.8398C7.39807 10.7466 7.20059 10.6979 7.00011 10.6979C6.79963 10.6979 6.60215 10.7466 6.42465 10.8398L3.7314 12.2561C3.68026 12.2832 3.62255 12.2953 3.56483 12.2912C3.50711 12.2871 3.4517 12.2669 3.4049 12.2329C3.35811 12.1989 3.3218 12.1524 3.30011 12.0987C3.27843 12.0451 3.27223 11.9864 3.28223 11.9294L3.79615 8.93168C3.8301 8.73377 3.81539 8.53058 3.7533 8.33962C3.6912 8.14867 3.58359 7.97569 3.43973 7.8356L1.2604 5.71401C1.21875 5.67378 1.18923 5.62266 1.17521 5.56647C1.16119 5.51029 1.16324 5.45129 1.18111 5.39621C1.19899 5.34113 1.23197 5.29217 1.27631 5.25492C1.32065 5.21767 1.37456 5.19362 1.4319 5.18551L4.44482 4.7451C4.6433 4.71622 4.83179 4.63955 4.99407 4.52167C5.15635 4.4038 5.28756 4.24825 5.3764 4.06843L6.72331 1.33901Z"
+                            stroke="#FACC15"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span class="rating-text">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Fashion Palace Live -->
+                  <div class="live-item">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/2c8834be81a6a06ed3b93560572b90c4b1e0e1b5?width=758"
+                      alt="Fashion Palace"
+                      class="live-thumbnail"
+                    />
+                    <div class="live-content">
+                      <h3 class="live-shop-name">
+                        Fashion Palace
+                        <svg
+                          class="verified-icon"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                        >
+                          <path
+                            d="M4.35449 11.7946L7.12748 14.9707L14.0595 7.03027M18.4709 7.08586L10.908 15.0263L10.5304 14.5296"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </h3>
+                      <p class="live-description">
+                        Latest fashion trends and quality fabrics.
+                      </p>
+                      <div class="live-location">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M11.6663 5.83366C11.6663 8.74624 8.43526 11.7796 7.35026 12.7164C7.24918 12.7924 7.12614 12.8335 6.99967 12.8335C6.87321 12.8335 6.75017 12.7924 6.64909 12.7164C5.56409 11.7796 2.33301 8.74624 2.33301 5.83366C2.33301 4.59598 2.82467 3.409 3.69984 2.53383C4.57501 1.65866 5.762 1.16699 6.99967 1.16699C8.23735 1.16699 9.42434 1.65866 10.2995 2.53383C11.1747 3.409 11.6663 4.59598 11.6663 5.83366Z"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7 7.58301C7.9665 7.58301 8.75 6.79951 8.75 5.83301C8.75 4.86651 7.9665 4.08301 7 4.08301C6.0335 4.08301 5.25 4.86651 5.25 5.83301C5.25 6.79951 6.0335 7.58301 7 7.58301Z"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span class="live-location-text"
+                          >Ariaria, Abia State</span
+                        >
+                      </div>
+                      <div class="live-rating">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.72331 1.33901C6.74888 1.28737 6.78837 1.24389 6.83733 1.21349C6.88629 1.1831 6.94277 1.16699 7.0004 1.16699C7.05803 1.16699 7.11451 1.1831 7.16347 1.21349C7.21243 1.24389 7.25192 1.28737 7.27748 1.33901L8.62498 4.06843C8.71375 4.24808 8.84479 4.4035 9.00685 4.52136C9.1689 4.63922 9.35714 4.716 9.5554 4.7451L12.5689 5.1861C12.626 5.19437 12.6796 5.21846 12.7238 5.25563C12.7679 5.2928 12.8007 5.34158 12.8186 5.39645C12.8364 5.45132 12.8386 5.51008 12.8247 5.5661C12.8109 5.62212 12.7817 5.67315 12.7404 5.71343L10.5611 7.8356C10.4173 7.97566 10.3098 8.14854 10.2477 8.33938C10.1856 8.53022 10.1709 8.73328 10.2046 8.9311L10.7191 11.9294C10.7292 11.9865 10.7231 12.0453 10.7014 12.099C10.6796 12.1527 10.6433 12.1993 10.5964 12.2333C10.5495 12.2674 10.494 12.2876 10.4362 12.2916C10.3783 12.2956 10.3206 12.2833 10.2694 12.2561L7.57557 10.8398C7.39807 10.7466 7.20059 10.6979 7.00011 10.6979C6.79963 10.6979 6.60215 10.7466 6.42465 10.8398L3.7314 12.2561C3.68026 12.2832 3.62255 12.2953 3.56483 12.2912C3.50711 12.2871 3.4517 12.2669 3.4049 12.2329C3.35811 12.1989 3.3218 12.1524 3.30011 12.0987C3.27843 12.0451 3.27223 11.9864 3.28223 11.9294L3.79615 8.93168C3.8301 8.73377 3.81539 8.53058 3.7533 8.33962C3.6912 8.14867 3.58359 7.97569 3.43973 7.8356L1.2604 5.71401C1.21875 5.67378 1.18923 5.62266 1.17521 5.56647C1.16119 5.51029 1.16324 5.45129 1.18111 5.39621C1.19899 5.34113 1.23197 5.29217 1.27631 5.25492C1.32065 5.21767 1.37456 5.19362 1.4319 5.18551L4.44482 4.7451C4.6433 4.71622 4.83179 4.63955 4.99407 4.52167C5.15635 4.4038 5.28756 4.24825 5.3764 4.06843L6.72331 1.33901Z"
+                            stroke="#FACC15"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span class="rating-text">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Popular Shop Section -->
+              <div class="shop-section">
+                <div class="section-header">
+                  <h2 class="section-title">Popular Shop</h2>
+                  <a href="#" class="view-all">View All</a>
+                </div>
+
+                <div class="shop-grid">
+                  <!-- Quality Furniture -->
+                  <div class="shop-item">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/b1eb229323d7bd667be971ecc5f37b477f62a8b5?width=758"
+                      alt="Quality Furniture"
+                      class="shop-thumbnail"
+                    />
+                    <div class="shop-content">
+                      <h3 class="shop-name">
+                        Quality Furniture
+                        <svg
+                          class="verified-icon"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                        >
+                          <path
+                            d="M4.35449 11.7946L7.12748 14.9707L14.0595 7.03027M18.4709 7.08586L10.908 15.0263L10.5304 14.5296"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </h3>
+                      <p class="shop-description">
+                        Best furniture for homes and offices.
+                      </p>
+                      <div class="shop-location">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M11.6663 5.83366C11.6663 8.74624 8.43526 11.7796 7.35026 12.7164C7.24918 12.7924 7.12614 12.8335 6.99967 12.8335C6.87321 12.8335 6.75017 12.7924 6.64909 12.7164C5.56409 11.7796 2.33301 8.74624 2.33301 5.83366C2.33301 4.59598 2.82467 3.409 3.69984 2.53383C4.57501 1.65866 5.762 1.16699 6.99967 1.16699C8.23735 1.16699 9.42434 1.65866 10.2995 2.53383C11.1747 3.409 11.6663 4.59598 11.6663 5.83366Z"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7 7.58301C7.9665 7.58301 8.75 6.79951 8.75 5.83301C8.75 4.86651 7.9665 4.08301 7 4.08301C6.0335 4.08301 5.25 4.86651 5.25 5.83301C5.25 6.79951 6.0335 7.58301 7 7.58301Z"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span class="live-location-text"
+                          >Ariaria, Abia State</span
+                        >
+                      </div>
+                      <div class="shop-rating">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.72331 1.33901C6.74888 1.28737 6.78837 1.24389 6.83733 1.21349C6.88629 1.1831 6.94277 1.16699 7.0004 1.16699C7.05803 1.16699 7.11451 1.1831 7.16347 1.21349C7.21243 1.24389 7.25192 1.28737 7.27748 1.33901L8.62498 4.06843C8.71375 4.24808 8.84479 4.4035 9.00685 4.52136C9.1689 4.63922 9.35714 4.716 9.5554 4.7451L12.5689 5.1861C12.626 5.19437 12.6796 5.21846 12.7238 5.25563C12.7679 5.2928 12.8007 5.34158 12.8186 5.39645C12.8364 5.45132 12.8386 5.51008 12.8247 5.5661C12.8109 5.62212 12.7817 5.67315 12.7404 5.71343L10.5611 7.8356C10.4173 7.97566 10.3098 8.14854 10.2477 8.33938C10.1856 8.53022 10.1709 8.73328 10.2046 8.9311L10.7191 11.9294C10.7292 11.9865 10.7231 12.0453 10.7014 12.099C10.6796 12.1527 10.6433 12.1993 10.5964 12.2333C10.5495 12.2674 10.494 12.2876 10.4362 12.2916C10.3783 12.2956 10.3206 12.2833 10.2694 12.2561L7.57557 10.8398C7.39807 10.7466 7.20059 10.6979 7.00011 10.6979C6.79963 10.6979 6.60215 10.7466 6.42465 10.8398L3.7314 12.2561C3.68026 12.2832 3.62255 12.2953 3.56483 12.2912C3.50711 12.2871 3.4517 12.2669 3.4049 12.2329C3.35811 12.1989 3.3218 12.1524 3.30011 12.0987C3.27843 12.0451 3.27223 11.9864 3.28223 11.9294L3.79615 8.93168C3.8301 8.73377 3.81539 8.53058 3.7533 8.33962C3.6912 8.14867 3.58359 7.97569 3.43973 7.8356L1.2604 5.71401C1.21875 5.67378 1.18923 5.62266 1.17521 5.56647C1.16119 5.51029 1.16324 5.45129 1.18111 5.39621C1.19899 5.34113 1.23197 5.29217 1.27631 5.25492C1.32065 5.21767 1.37456 5.19362 1.4319 5.18551L4.44482 4.7451C4.6433 4.71622 4.83179 4.63955 4.99407 4.52167C5.15635 4.4038 5.28756 4.24825 5.3764 4.06843L6.72331 1.33901Z"
+                            stroke="#FACC15"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span class="rating-text">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Auto Parts Nigeria -->
+                  <div class="shop-item">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/fbc0a2a27248724573efe0cf16a57b441630286e?width=758"
+                      alt="Auto Parts Nigeria"
+                      class="shop-thumbnail"
+                    />
+                    <div class="shop-content">
+                      <h3 class="shop-name">
+                        Auto Parts Nigeria
+                        <svg
+                          class="verified-icon"
+                          width="23"
+                          height="24"
+                          viewBox="0 0 23 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M4.59863 12.8279L7.49052 16.1403L14.7198 7.85938M19.3203 7.91734L11.4332 16.1983L11.0394 15.6803"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </h3>
+                      <p class="shop-description">
+                        Genuine auto parts for all vehicle brands.
+                      </p>
+                      <div class="shop-location">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M11.6663 5.83366C11.6663 8.74624 8.43526 11.7796 7.35026 12.7164C7.24918 12.7924 7.12614 12.8335 6.99967 12.8335C6.87321 12.8335 6.75017 12.7924 6.64909 12.7164C5.56409 11.7796 2.33301 8.74624 2.33301 5.83366C2.33301 4.59598 2.82467 3.409 3.69984 2.53383C4.57501 1.65866 5.762 1.16699 6.99967 1.16699C8.23735 1.16699 9.42434 1.65866 10.2995 2.53383C11.1747 3.409 11.6663 4.59598 11.6663 5.83366Z"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7 7.58301C7.9665 7.58301 8.75 6.79951 8.75 5.83301C8.75 4.86651 7.9665 4.08301 7 4.08301C6.0335 4.08301 5.25 4.86651 5.25 5.83301C5.25 6.79951 6.0335 7.58301 7 7.58301Z"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span class="live-location-text"
+                          >Alaba, Lagos State</span
+                        >
+                      </div>
+                      <div class="shop-rating">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.72331 1.33901C6.74888 1.28737 6.78837 1.24389 6.83733 1.21349C6.88629 1.1831 6.94277 1.16699 7.0004 1.16699C7.05803 1.16699 7.11451 1.1831 7.16347 1.21349C7.21243 1.24389 7.25192 1.28737 7.27748 1.33901L8.62498 4.06843C8.71375 4.24808 8.84479 4.4035 9.00685 4.52136C9.1689 4.63922 9.35714 4.716 9.5554 4.7451L12.5689 5.1861C12.626 5.19437 12.6796 5.21846 12.7238 5.25563C12.7679 5.2928 12.8007 5.34158 12.8186 5.39645C12.8364 5.45132 12.8386 5.51008 12.8247 5.5661C12.8109 5.62212 12.7817 5.67315 12.7404 5.71343L10.5611 7.8356C10.4173 7.97566 10.3098 8.14854 10.2477 8.33938C10.1856 8.53022 10.1709 8.73328 10.2046 8.9311L10.7191 11.9294C10.7292 11.9865 10.7231 12.0453 10.7014 12.099C10.6796 12.1527 10.6433 12.1993 10.5964 12.2333C10.5495 12.2674 10.494 12.2876 10.4362 12.2916C10.3783 12.2956 10.3206 12.2833 10.2694 12.2561L7.57557 10.8398C7.39807 10.7466 7.20059 10.6979 7.00011 10.6979C6.79963 10.6979 6.60215 10.7466 6.42465 10.8398L3.7314 12.2561C3.68026 12.2832 3.62255 12.2953 3.56483 12.2912C3.50711 12.2871 3.4517 12.2669 3.4049 12.2329C3.35811 12.1989 3.3218 12.1524 3.30011 12.0987C3.27843 12.0451 3.27223 11.9864 3.28223 11.9294L3.79615 8.93168C3.8301 8.73377 3.81539 8.53058 3.7533 8.33962C3.6912 8.14867 3.58359 7.97569 3.43973 7.8356L1.2604 5.71401C1.21875 5.67378 1.18923 5.62266 1.17521 5.56647C1.16119 5.51029 1.16324 5.45129 1.18111 5.39621C1.19899 5.34113 1.23197 5.29217 1.27631 5.25492C1.32065 5.21767 1.37456 5.19362 1.4319 5.18551L4.44482 4.7451C4.6433 4.71622 4.83179 4.63955 4.99407 4.52167C5.15635 4.4038 5.28756 4.24825 5.3764 4.06843L6.72331 1.33901Z"
+                            stroke="#FACC15"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span class="rating-text">4.8</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Promotions Page -->
+          <div id="promotionsPage" class="page hidden">
+            <div class="page-content">
+              <!-- Tab Navigation -->
+              <div class="tab-nav">
+                <button class="tab-button active">Active Campaigns</button>
+                <button class="tab-button inactive">Boost Product</button>
+                <button class="tab-button inactive">Analytics</button>
+              </div>
+
+              <!-- Active Campaigns -->
+              <div class="space-y-0" style="margin-bottom: 32px">
+                <div class="campaign-card">
+                  <div class="campaign-icon">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                      <path
+                        d="M44.2709 19.7913H41.1459M8.85421 19.7913H11.9792M26.5625 2.08301V5.20801M14.0407 7.27051L16.249 9.48092M39.0834 7.27051L36.873 9.48092M27.9282 12.9445C18.7417 20.9632 8.85109 31.0486 5.33755 34.684C4.51463 35.5351 4.25213 36.7757 4.72609 37.859C4.98442 38.4476 5.28963 39.0903 5.60525 39.6372C5.92088 40.184 6.32505 40.7695 6.7063 41.2872C7.4063 42.2403 8.61255 42.632 9.76046 42.3455C14.6657 41.1195 28.3459 37.5976 39.8834 33.6518"
+                        stroke="#15803D"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M22.5126 17.9094C22.5126 17.9094 24.6907 20.0885 28.3834 26.4844C32.0761 32.8802 32.8741 35.8562 32.8741 35.8562M23.6418 38.9135L24.2605 41.224C24.423 41.8306 24.4645 42.4634 24.3824 43.0861C24.3004 43.7088 24.0965 44.3092 23.7825 44.8531C23.4684 45.397 23.0503 45.8737 22.5519 46.256C22.0536 46.6383 21.4849 46.9187 20.8782 47.0812C20.2715 47.2438 19.6388 47.2852 19.0161 47.2032C18.3934 47.1211 17.793 46.9173 17.2491 46.6032C16.7052 46.2891 16.2285 45.871 15.8462 45.3727C15.4639 44.8744 15.1834 44.3056 15.0209 43.699L14.5063 41.774M27.1313 11.5625C27.1313 11.5625 29.6282 14.2927 34.5959 22.8979C39.5636 31.5031 40.6803 35.0302 40.6803 35.0302"
+                        stroke="#15803D"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="campaign-content">
+                    <h3 class="campaign-title">Running Ad: Flash Sale Boost</h3>
+                    <p class="campaign-details">Product: Winter Jacket</p>
+                    <p class="campaign-details">
+                      Budget: ���5,000 | Duration: 5 days
+                    </p>
+                    <div class="status-indicator">
+                      <span class="campaign-details">Status: Active</span>
+                      <div class="status-dot"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="campaign-card">
+                  <div class="campaign-icon">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                      <path
+                        d="M44.2709 19.7913H41.1459M8.85421 19.7913H11.9792M26.5625 2.08301V5.20801M14.0407 7.27051L16.249 9.48092M39.0834 7.27051L36.873 9.48092M27.9282 12.9445C18.7417 20.9632 8.85109 31.0486 5.33755 34.684C4.51463 35.5351 4.25213 36.7757 4.72609 37.859C4.98442 38.4476 5.28963 39.0903 5.60525 39.6372C5.92088 40.184 6.32505 40.7695 6.7063 41.2872C7.4063 42.2403 8.61255 42.632 9.76046 42.3455C14.6657 41.1195 28.3459 37.5976 39.8834 33.6518"
+                        stroke="#15803D"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M22.5126 17.9094C22.5126 17.9094 24.6907 20.0885 28.3834 26.4844C32.0761 32.8802 32.8741 35.8562 32.8741 35.8562M23.6418 38.9135L24.2605 41.224C24.423 41.8306 24.4645 42.4634 24.3824 43.0861C24.3004 43.7088 24.0965 44.3092 23.7825 44.8531C23.4684 45.397 23.0503 45.8737 22.5519 46.256C22.0536 46.6383 21.4849 46.9187 20.8782 47.0812C20.2715 47.2438 19.6388 47.2852 19.0161 47.2032C18.3934 47.1211 17.793 46.9173 17.2491 46.6032C16.7052 46.2891 16.2285 45.871 15.8462 45.3727C15.4639 44.8744 15.1834 44.3056 15.0209 43.699L14.5063 41.774M27.1313 11.5625C27.1313 11.5625 29.6282 14.2927 34.5959 22.8979C39.5636 31.5031 40.6803 35.0302 40.6803 35.0302"
+                        stroke="#15803D"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="campaign-content">
+                    <h3 class="campaign-title">Running Ad: Flash Sale Boost</h3>
+                    <p class="campaign-details">Product: Smartwatch</p>
+                    <p class="campaign-details">
+                      Budget: ₦5,000 | Duration: 3 days
+                    </p>
+                    <div class="status-indicator">
+                      <span class="campaign-details">Status: Active</span>
+                      <div class="status-dot"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Boost a Product Section -->
+              <div style="margin-bottom: 32px">
+                <div class="section-divider">
+                  <div class="divider-line"></div>
+                  <h2 class="divider-text">Boost a Product</h2>
+                  <div class="divider-line"></div>
+                </div>
+
+                <div class="space-y-6">
+                  <div class="form-group">
+                    <label class="form-label">Choose Product</label>
+                    <div
+                      class="form-input"
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        cursor: pointer;
+                      "
+                    >
+                      <span
+                        style="
+                          color: black;
+                          font-size: 13px;
+                          font-weight: normal;
+                          line-height: 8.311px;
+                        "
+                      >
+                        Iphone 14 pro max
+                      </span>
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M1.63605 5.29279C1.82358 5.10532 2.07788 5 2.34305 5C2.60821 5 2.86252 5.10532 3.05005 5.29279L8.00005 10.2428L12.95 5.29279C13.1387 5.11063 13.3913 5.00983 13.6535 5.01211C13.9156 5.01439 14.1665 5.11956 14.3519 5.30497C14.5373 5.49038 14.6424 5.74119 14.6447 6.00339C14.647 6.26558 14.5462 6.51818 14.364 6.70679L8.70705 12.3638C8.51952 12.5513 8.26521 12.6566 8.00005 12.6566C7.73488 12.6566 7.48058 12.5513 7.29305 12.3638L1.63605 6.70679C1.44858 6.51926 1.34326 6.26495 1.34326 5.99979C1.34326 5.73462 1.44858 5.48031 1.63605 5.29279Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">Set Budget (₦)</label>
+                    <input type="text" class="form-input" value="₦5000" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">Select Duration (days)</label>
+                    <input type="text" class="form-input" value="5" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Preview Section -->
+              <div style="background-color: white; margin-bottom: 24px">
+                <h3
+                  style="
+                    color: black;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 8.311px;
+                    margin-bottom: 16px;
+                    padding: 16px 24px;
+                    padding-top: 16px;
+                  "
+                >
+                  Preview
+                </h3>
+
+                <div class="campaign-card" style="padding: 24px">
+                  <div class="campaign-icon">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                      <path
+                        d="M44.2709 19.7913H41.1459M8.85421 19.7913H11.9792M26.5625 2.08301V5.20801M14.0407 7.27051L16.249 9.48092M39.0834 7.27051L36.873 9.48092M27.9282 12.9445C18.7417 20.9632 8.85109 31.0486 5.33755 34.684C4.51463 35.5351 4.25213 36.7757 4.72609 37.859C4.98442 38.4476 5.28963 39.0903 5.60525 39.6372C5.92088 40.184 6.32505 40.7695 6.7063 41.2872C7.4063 42.2403 8.61255 42.632 9.76046 42.3455C14.6657 41.1195 28.3459 37.5976 39.8834 33.6518"
+                        stroke="#15803D"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M22.5126 17.9094C22.5126 17.9094 24.6907 20.0885 28.3834 26.4844C32.0761 32.8802 32.8741 35.8562 32.8741 35.8562M23.6418 38.9135L24.2605 41.224C24.423 41.8306 24.4645 42.4634 24.3824 43.0861C24.3004 43.7088 24.0965 44.3092 23.7825 44.8531C23.4684 45.397 23.0503 45.8737 22.5519 46.256C22.0536 46.6383 21.4849 46.9187 20.8782 47.0812C20.2715 47.2438 19.6388 47.2852 19.0161 47.2032C18.3934 47.1211 17.793 46.9173 17.2491 46.6032C16.7052 46.2891 16.2285 45.871 15.8462 45.3727C15.4639 44.8744 15.1834 44.3056 15.0209 43.699L14.5063 41.774M27.1313 11.5625C27.1313 11.5625 29.6282 14.2927 34.5959 22.8979C39.5636 31.5031 40.6803 35.0302 40.6803 35.0302"
+                        stroke="#15803D"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="campaign-content">
+                    <p class="campaign-details">Product: Smartwatch</p>
+                    <p class="campaign-details">
+                      Budget: ₦5,000 | Duration: 3 days
+                    </p>
+                    <div class="status-indicator" style="margin-bottom: 4px">
+                      <span class="campaign-details">Status: Active</span>
+                      <div class="status-dot"></div>
+                    </div>
+                    <p class="campaign-details">Est. Reach: 5,000 people</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pay & Launch Button -->
+              <button
+                class="btn btn-primary w-full font-work-sans"
+                style="height: 48px; margin-bottom: 24px"
+              >
+                Pay & launch
+              </button>
+            </div>
+          </div>
+
+          <!-- Settings Page -->
+          <div id="settingsPage" class="page hidden">
+            <!-- Business Info Section -->
+            <div class="settings-section">
+              <h2 class="section-title">Business Info</h2>
+
+              <div class="space-y-6">
+                <div class="form-group">
+                  <label class="form-label">Store Name</label>
+                  <input
+                    type="text"
+                    class="form-input form-input-small"
+                    placeholder="Enter your store name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Business Email</label>
+                  <input
+                    type="email"
+                    class="form-input form-input-small"
+                    value="business@gmail.com"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Contact Number</label>
+                  <input
+                    type="tel"
+                    class="form-input form-input-small"
+                    value="+23456789000"
+                  />
+                </div>
+
+                <div class="flex justify-center pt-4">
+                  <button class="btn btn-primary btn-small font-work-sans">
+                    Update Info
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- KYC Verification Section -->
+            <div class="settings-group">
+              <div class="section-divider">
+                <div class="divider-line"></div>
+                <h2 class="divider-text">KYC Verification</h2>
+                <div class="divider-line"></div>
+              </div>
+
+              <div style="margin-bottom: 32px">
+                <label class="form-label">Status</label>
+                <div
+                  class="form-input form-input-small"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    cursor: pointer;
+                  "
+                >
+                  <span
+                    style="
+                      color: black;
+                      font-size: 10px;
+                      font-weight: 500;
+                      line-height: 8.311px;
+                    "
+                  >
+                    Not Verify
+                  </span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M1.63605 5.29279C1.82358 5.10532 2.07788 5 2.34305 5C2.60821 5 2.86252 5.10532 3.05005 5.29279L8.00005 10.2428L12.95 5.29279C13.1387 5.11063 13.3913 5.00983 13.6535 5.01211C13.9156 5.01439 14.1665 5.11956 14.3519 5.30497C14.5373 5.49038 14.6424 5.74119 14.6447 6.00339C14.647 6.26558 14.5462 6.51818 14.364 6.70679L8.70705 12.3638C8.51952 12.5513 8.26521 12.6566 8.00005 12.6566C7.73488 12.6566 7.48058 12.5513 7.29305 12.3638L1.63605 6.70679C1.44858 6.51926 1.34326 6.26495 1.34326 5.99979C1.34326 5.73462 1.44858 5.48031 1.63605 5.29279Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="flex justify-center">
+                <button class="btn btn-primary btn-small font-work-sans">
+                  Submit KYC doocument
+                </button>
+              </div>
+            </div>
+
+            <!-- Preferences Section -->
+            <div class="settings-section">
+              <h2 class="section-title">Preferences</h2>
+
+              <div class="space-y-6">
+                <div class="preference-item">
+                  <span class="preference-label">Enable Dark Mode</span>
+                  <button class="toggle-switch" id="darkModeToggle">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      id="toggleIcon"
+                    >
+                      <path
+                        d="M7 15C8.65685 15 10 13.6569 10 12C10 10.3431 8.65685 9 7 9C5.34315 9 4 10.3431 4 12C4 13.6569 5.34315 15 7 15Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M12 7H17C19.76 7 22 9.24 22 12C22 14.76 19.76 17 17 17H7C4.24 17 2 14.76 2 12C2 9.24 4.24 7 7 7H12Z"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="preference-item">
+                  <span class="preference-label">Language</span>
+                  <div class="language-select">
+                    <span class="language-text">English</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M1.63605 5.29279C1.82358 5.10532 2.07788 5 2.34305 5C2.60821 5 2.86252 5.10532 3.05005 5.29279L8.00005 10.2428L12.95 5.29279C13.1387 5.11063 13.3913 5.00983 13.6535 5.01211C13.9156 5.01439 14.1665 5.11956 14.3519 5.30497C14.5373 5.49038 14.6424 5.74119 14.6447 6.00339C14.647 6.26558 14.5462 6.51818 14.364 6.70679L8.70705 12.3638C8.51952 12.5513 8.26521 12.6566 8.00005 12.6566C7.73488 12.6566 7.48058 12.5513 7.29305 12.3638L1.63605 6.70679C1.44858 6.51926 1.34326 6.26495 1.34326 5.99979C1.34326 5.73462 1.44858 5.48031 1.63605 5.29279Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="flex justify-center pt-4">
+                  <button class="btn btn-primary btn-small font-work-sans">
+                    Save Preferences
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Page -->
+          <div id="livePage" class="page hidden">
+            <div class="page-content">
+              <!-- Action Buttons -->
+              <div class="live-actions">
+                <button class="btn btn-primary live-action-btn">
+                  Start New Live
+                </button>
+                <button class="btn btn-primary live-action-btn">
+                  Schedule Live
+                </button>
+              </div>
+
+              <!-- Live Settings Section -->
+              <div class="live-settings-section">
+                <div class="section-divider">
+                  <div class="divider-line"></div>
+                  <h2 class="divider-text">Live Settings</h2>
+                  <div class="divider-line"></div>
+                </div>
+
+                <div class="live-settings-form">
+                  <!-- Live Title -->
+                  <div class="form-group">
+                    <label class="form-label">Live Title</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder="Enter your live stream title"
+                    />
+                  </div>
+
+                  <!-- Choose Products -->
+                  <div class="form-group">
+                    <label class="form-label">Choose Products to Feature</label>
+                    <div
+                      class="form-input"
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        cursor: pointer;
+                      "
+                    >
+                      <span
+                        style="
+                          color: black;
+                          font-size: 13px;
+                          font-weight: 500;
+                          line-height: 8.311px;
+                        "
+                      >
+                        Iphone 14 pro max
+                      </span>
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M1.63605 5.29279C1.82358 5.10532 2.07788 5 2.34305 5C2.60821 5 2.86252 5.10532 3.05005 5.29279L8.00005 10.2428L12.95 5.29279C13.1387 5.11063 13.3913 5.00983 13.6535 5.01211C13.9156 5.01439 14.1665 5.11956 14.3519 5.30497C14.5373 5.49038 14.6424 5.74119 14.6447 6.00339C14.647 6.26558 14.5462 6.51818 14.364 6.70679L8.70705 12.3638C8.51952 12.5513 8.26521 12.6566 8.00005 12.6566C7.73488 12.6566 7.48058 12.5513 7.29305 12.3638L1.63605 6.70679C1.44858 6.51926 1.34326 6.26495 1.34326 5.99979C1.34326 5.73462 1.44858 5.48031 1.63605 5.29279Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- Enable Comment -->
+                  <div class="form-group">
+                    <div class="checkbox-item">
+                      <span class="checkbox-label">Enable Comment</span>
+                      <button class="checkbox-toggle" id="commentToggle">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M10.6 16.2L17.65 9.15L16.25 7.75L10.6 13.4L7.75 10.55L6.35 11.95L10.6 16.2ZM5 21C4.45 21 3.97933 20.8043 3.588 20.413C3.19667 20.0217 3.00067 19.5507 3 19V5C3 4.45 3.196 3.97933 3.588 3.588C3.98 3.19667 4.45067 3.00067 5 3H19C19.55 3 20.021 3.196 20.413 3.588C20.805 3.98 21.0007 4.45067 21 5V19C21 19.55 20.8043 20.021 20.413 20.413C20.0217 20.805 19.5507 21.0007 19 21H5ZM5 19H19V5H5V19Z"
+                            fill="var(--brand-green)"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Past Live Sessions -->
+              <div class="past-sessions-section">
+                <h2 class="section-title text-center">Past Live Sessions</h2>
+
+                <div class="session-list">
+                  <div class="session-item">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/9f1a2c347e10286fe5486eb199cd68b52a286466?width=180"
+                      alt="Live session thumbnail"
+                      class="session-thumbnail"
+                    />
+                    <div class="session-content">
+                      <h3 class="session-title">Summer Sale Live</h3>
+                      <p class="session-details">
+                        Views: 1.2K | Iphone 16 pro max 128gb black
+                      </p>
+                      <div class="session-actions">
+                        <svg
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          class="play-icon"
+                        >
+                          <path
+                            d="M6.3305 4.15894C6.247 4.10943 6.15188 4.0829 6.0548 4.08205C5.95773 4.0812 5.86216 4.10607 5.77781 4.15411C5.69345 4.20215 5.62331 4.27167 5.57452 4.35559C5.52573 4.43951 5.50002 4.53486 5.5 4.63194V17.3681C5.50002 17.4652 5.52573 17.5605 5.57452 17.6444C5.62331 17.7284 5.69345 17.7979 5.77781 17.8459C5.86216 17.894 5.95773 17.9188 6.0548 17.918C6.15188 17.9171 6.247 17.8906 6.3305 17.8411L17.0766 11.473C17.1587 11.4243 17.2266 11.3551 17.2739 11.2722C17.3211 11.1892 17.3459 11.0955 17.3459 11C17.3459 10.9046 17.3211 10.8108 17.2739 10.7279C17.2266 10.6449 17.1587 10.5757 17.0766 10.527L6.3305 4.15894Z"
+                            fill="var(--brand-green)"
+                            stroke="var(--brand-green)"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <a href="#" class="watch-replay-link">Watch Replay</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="session-item">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/9f1a2c347e10286fe5486eb199cd68b52a286466?width=180"
+                      alt="Live session thumbnail"
+                      class="session-thumbnail"
+                    />
+                    <div class="session-content">
+                      <h3 class="session-title">Summer Sale Live</h3>
+                      <p class="session-details">
+                        Views: 1.2K | Iphone 16 pro max 128gb black
+                      </p>
+                      <div class="session-actions">
+                        <svg
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          class="play-icon"
+                        >
+                          <path
+                            d="M6.3305 4.15894C6.247 4.10943 6.15188 4.0829 6.0548 4.08205C5.95773 4.0812 5.86216 4.10607 5.77781 4.15411C5.69345 4.20215 5.62331 4.27167 5.57452 4.35559C5.52573 4.43951 5.50002 4.53486 5.5 4.63194V17.3681C5.50002 17.4652 5.52573 17.5605 5.57452 17.6444C5.62331 17.7284 5.69345 17.7979 5.77781 17.8459C5.86216 17.894 5.95773 17.9188 6.0548 17.918C6.15188 17.9171 6.247 17.8906 6.3305 17.8411L17.0766 11.473C17.1587 11.4243 17.2266 11.3551 17.2739 11.2722C17.3211 11.1892 17.3459 11.0955 17.3459 11C17.3459 10.9046 17.3211 10.8108 17.2739 10.7279C17.2266 10.6449 17.1587 10.5757 17.0766 10.527L6.3305 4.15894Z"
+                            fill="var(--brand-green)"
+                            stroke="var(--brand-green)"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <a href="#" class="watch-replay-link">Watch Replay</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Market Page -->
+          <div id="marketPage" class="page hidden">
+            <div class="page-content">
+              <div class="text-center" style="padding: 60px 20px">
+                <svg
+                  width="80"
+                  height="80"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  style="margin: 0 auto 24px; color: var(--brand-green)"
+                >
+                  <path
+                    d="M3 10.9346H7V17.9346H3V10.9346ZM10 7.93457H14V20.9346H10V7.93457Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 22.9346V20.9346"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 6.93457H21V11.4346H17V6.93457Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 10.9346V5.93457M19 17.9346V11.4346M19 6.93457V2.93457"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <h2
+                  style="
+                    color: var(--brand-green);
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-bottom: 16px;
+                  "
+                >
+                  Market
+                </h2>
+                <p
+                  style="
+                    color: var(--text-gray);
+                    font-size: 16px;
+                    line-height: 1.5;
+                  "
+                >
+                  Market analytics and insights coming soon...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shop Page - Previous Home Content -->
+          <div id="shopPage" class="page hidden">
+            <div class="dashboard-grid">
+              <!-- Stats Cards -->
+              <div class="dashboard-card">
+                <div class="card-content">
+                  <div class="card-title">Total Products</div>
+                  <div class="card-value">128</div>
+                </div>
+              </div>
+
+              <div class="dashboard-card">
+                <div class="card-content">
+                  <div class="card-title">Live Engagements</div>
+                  <div class="card-value">118</div>
+                </div>
+              </div>
+
+              <!-- Action Cards -->
+              <a href="#" class="dashboard-card" onclick="navigateTo('live')">
+                <div class="card-icon">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path
+                      d="M8.1795 6.25057C8.07936 6.1484 7.96006 6.06695 7.82843 6.0109C7.6968 5.95484 7.55542 5.92527 7.41236 5.92388C7.26929 5.92249 7.12736 5.9493 6.99466 6.00278C6.86197 6.05626 6.74111 6.13537 6.639 6.23557C5.48426 7.38419 4.56822 8.74996 3.94367 10.2542C3.31912 11.7584 2.9984 13.3713 3 15.0001C2.9983 16.6913 3.34414 18.3649 4.01605 19.9169C4.68796 21.469 5.67162 22.8664 6.906 24.0226C7.11378 24.2146 7.38824 24.3182 7.67111 24.3112C7.95397 24.3042 8.22298 24.1872 8.421 23.9851C8.895 23.5111 8.8365 22.7566 8.3805 22.3201C7.38975 21.3759 6.60133 20.2401 6.06317 18.9817C5.52502 17.7233 5.24835 16.3687 5.25 15.0001C5.25 12.2311 6.3615 9.72007 8.1645 7.89307C8.5995 7.45057 8.6445 6.71557 8.1795 6.25057ZM10.821 8.89507C10.6234 8.6918 10.3534 8.57514 10.07 8.57064C9.78654 8.56614 9.5129 8.67418 9.309 8.87107C8.49722 9.67185 7.8529 10.6262 7.41356 11.6784C6.97422 12.7306 6.74866 13.8598 6.75 15.0001C6.75 17.5381 7.845 19.8196 9.5895 21.3976C9.79556 21.5793 10.0636 21.6747 10.3382 21.6641C10.6127 21.6535 10.8726 21.5376 11.064 21.3406C11.556 20.8486 11.4645 20.0746 11.0025 19.6396C10.3694 19.0441 9.86511 18.3252 9.5207 17.5272C9.17628 16.7293 8.99907 15.8692 9 15.0001C9 13.2751 9.6855 11.7091 10.8 10.5601C11.229 10.1191 11.2995 9.37207 10.821 8.89507ZM19.179 8.89357C19.3765 8.6903 19.6466 8.57364 19.93 8.56914C20.2135 8.56464 20.4871 8.67268 20.691 8.86957C21.503 9.67053 22.1474 10.6251 22.5867 11.6776C23.0261 12.7301 23.2515 13.8595 23.25 15.0001C23.25 17.5381 22.155 19.8196 20.4105 21.3976C20.2044 21.5793 19.9364 21.6747 19.6618 21.6641C19.3873 21.6535 19.1274 21.5376 18.936 21.3406C18.444 20.8486 18.5355 20.0746 18.9975 19.6396C19.6306 19.0441 20.1349 18.3252 20.4793 17.5272C20.8237 16.7293 21.0009 15.8692 21 15.0001C21 13.2751 20.3145 11.7091 19.2 10.5601C18.771 10.1191 18.7005 9.37057 19.179 8.89357ZM21.8205 6.25057C21.9206 6.1484 22.0399 6.06695 22.1716 6.0109C22.3032 5.95484 22.4446 5.92527 22.5876 5.92388C22.7307 5.92249 22.8726 5.9493 23.0053 6.00278C23.138 6.05626 23.2589 6.13537 23.361 6.23557C24.5157 7.38419 25.4318 8.74996 26.0563 10.2542C26.6809 11.7584 27.0016 13.3713 27 15.0001C27.0017 16.6913 26.6559 18.3649 25.984 19.9169C25.312 21.469 24.3284 22.8664 23.094 24.0226C22.8862 24.2146 22.6118 24.3182 22.3289 24.3112C22.046 24.3042 21.777 24.1872 21.579 23.9851C21.105 23.5111 21.1635 22.7566 21.6195 22.3201C22.6103 21.3759 23.3987 20.2401 23.9368 18.9817C24.475 17.7233 24.7517 16.3687 24.75 15.0001C24.75 12.2311 23.6385 9.72007 21.8355 7.89307C21.4005 7.45057 21.3555 6.71557 21.8205 6.25057Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">Go Live</div>
+                </div>
+              </a>
+
+              <div class="dashboard-card">
+                <div class="card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M11 20C11 20.2652 11.1054 20.5196 11.2929 20.7071C11.4804 20.8946 11.7348 21 12 21C12.2652 21 12.5196 20.8946 12.7071 20.7071C12.8946 20.5196 13 20.2652 13 20V13H20C20.2652 13 20.5196 12.8946 20.7071 12.7071C20.8946 12.5196 21 12.2652 21 12C21 11.7348 20.8946 11.4804 20.7071 11.2929C20.5196 11.1054 20.2652 11 20 11H13V4C13 3.73478 12.8946 3.48043 12.7071 3.29289C12.5196 3.10536 12.2652 3 12 3C11.7348 3 11.4804 3.10536 11.2929 3.29289C11.1054 3.48043 11 3.73478 11 4V11H4C3.73478 11 3.48043 11.1054 3.29289 11.2929C3.10536 11.4804 3 11.7348 3 12C3 12.2652 3.10536 12.5196 3.29289 12.7071C3.48043 12.8946 3.73478 13 4 13H11V20Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">Add Product</div>
+                </div>
+              </div>
+
+              <a
+                href="#"
+                class="dashboard-card"
+                onclick="navigateTo('promotions')"
+              >
+                <div class="card-icon">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path
+                      d="M26.5625 11.875H24.6875M5.3125 11.875H7.1875M15.9375 1.25V3.125M8.42438 4.3625L9.74938 5.68875M23.45 4.3625L22.1237 5.68875M16.7569 7.76688C11.245 12.5781 5.31063 18.6294 3.2025 20.8106C2.70875 21.3213 2.55125 22.0656 2.83563 22.7156C2.99063 23.0688 3.17375 23.4544 3.36313 23.7825C3.5525 24.1106 3.795 24.4619 4.02375 24.7725C4.44375 25.3444 5.1675 25.5794 5.85625 25.4075C8.79938 24.6719 17.0075 22.5587 23.93 20.1912"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.5075 10.7456C13.5075 10.7456 14.8144 12.0531 17.03 15.8906C19.2456 19.7281 19.7244 21.5138 19.7244 21.5138M14.185 23.3481L14.5563 24.7344C14.6538 25.0984 14.6786 25.478 14.6294 25.8516C14.5802 26.2253 14.4579 26.5855 14.2694 26.9119C14.081 27.2382 13.8301 27.5242 13.5311 27.7536C13.2321 27.983 12.8909 28.1512 12.5269 28.2487C12.1629 28.3463 11.7832 28.3711 11.4096 28.3219C11.036 28.2727 10.6757 28.1504 10.3494 27.9619C10.0231 27.7735 9.73702 27.5226 9.50764 27.2236C9.27826 26.9246 9.11001 26.5834 9.0125 26.2194L8.70375 25.0644M16.2788 6.9375C16.2788 6.9375 17.7769 8.57563 20.7575 13.7387C23.7381 18.9019 24.4081 21.0181 24.4081 21.0181"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">Promote Product</div>
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="dashboard-card"
+                onclick="navigateTo('reviews')"
+              >
+                <div class="card-icon">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path
+                      d="M18.75 6.25048L23.75 11.2505M26.4675 8.51548C27.1284 7.85476 27.4997 6.95856 27.4998 6.02404C27.5 5.08953 27.1288 4.19324 26.4681 3.53235C25.8074 2.87147 24.9112 2.50012 23.9767 2.5C23.0422 2.49988 22.1459 2.87101 21.485 3.53173L4.80249 20.218C4.51227 20.5074 4.29764 20.8636 4.17749 21.2555L2.52624 26.6955C2.49394 26.8036 2.4915 26.9184 2.51918 27.0278C2.54687 27.1372 2.60364 27.237 2.68349 27.3167C2.76333 27.3964 2.86327 27.4531 2.97269 27.4806C3.08211 27.5081 3.19694 27.5055 3.30499 27.473L8.74624 25.823C9.13771 25.7039 9.49396 25.4906 9.78374 25.2017L26.4675 8.51548Z"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">View Reviews</div>
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="dashboard-card"
+                onclick="navigateTo('settings')"
+              >
+                <div class="card-icon">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path
+                      d="M6.875 8.75C6.875 7.9212 7.20424 7.12634 7.79029 6.54029C8.37634 5.95424 9.1712 5.625 10 5.625C10.8288 5.625 11.6237 5.95424 12.2097 6.54029C12.7958 7.12634 13.125 7.9212 13.125 8.75C13.125 9.5788 12.7958 10.3737 12.2097 10.9597C11.6237 11.5458 10.8288 11.875 10 11.875C9.1712 11.875 8.37634 11.5458 7.79029 10.9597C7.20424 10.3737 6.875 9.5788 6.875 8.75ZM10 3.75C8.67392 3.75 7.40215 4.27678 6.46447 5.21447C5.52678 6.15215 5 7.42392 5 8.75C5 10.0761 5.52678 11.3479 6.46447 12.2855C7.40215 13.2232 8.67392 13.75 10 13.75C11.3261 13.75 12.5979 13.2232 13.5355 12.2855C14.4732 11.3479 15 10.0761 15 8.75C15 7.42392 14.4732 6.15215 13.5355 5.21447C12.5979 4.27678 11.3261 3.75 10 3.75ZM19.375 10C19.375 9.50272 19.5725 9.02581 19.9242 8.67417C20.2758 8.32254 20.7527 8.125 21.25 8.125C21.7473 8.125 22.2242 8.32254 22.5758 8.67417C22.9275 9.02581 23.125 9.50272 23.125 10C23.125 10.4973 22.9275 10.9742 22.5758 11.3258C22.2242 11.6775 21.7473 11.875 21.25 11.875C20.7527 11.875 20.2758 11.6775 19.9242 11.3258C19.5725 10.9742 19.375 10.4973 19.375 10ZM21.25 6.25C20.2554 6.25 19.3016 6.64509 18.5983 7.34835C17.8951 8.05161 17.5 9.00544 17.5 10C17.5 10.9946 17.8951 11.9484 18.5983 12.6517C19.3016 13.3549 20.2554 13.75 21.25 13.75C22.2446 13.75 23.1984 13.3549 23.9017 12.6517C24.6049 11.9484 25 10.9946 25 10C25 9.00544 24.6049 8.05161 23.9017 7.34835C23.1984 6.64509 22.2446 6.25 21.25 6.25ZM5.3125 16.25C4.56658 16.25 3.85121 16.5463 3.32376 17.0738C2.79632 17.6012 2.5 18.3166 2.5 19.0625V19.41C2.50131 19.4969 2.50715 19.5837 2.5175 19.67C2.6214 20.6 2.95566 21.4893 3.49 22.2575C4.5125 23.7175 6.465 25 10 25C11.7113 25 13.0513 24.7 14.095 24.225C13.9053 23.5951 13.7928 22.9445 13.76 22.2875C12.9538 22.7625 11.7662 23.125 10 23.125C6.9725 23.125 5.6425 22.0625 5.025 21.1812C4.67532 20.6761 4.45511 20.0927 4.38375 19.4825L4.375 19.3837V19.0625C4.375 18.8139 4.47377 18.5754 4.64959 18.3996C4.8254 18.2238 5.06386 18.125 5.3125 18.125H14.665C14.9763 17.5288 15.358 16.9775 15.8012 16.4812C16.2445 15.985 16.7438 15.5463 17.2862 15.175C16.2213 15.4987 15.1088 15.625 14 15.625H5.3125V16.25Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">Settings & Profile</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Reviews Page -->
+          <div id="reviewsPage" class="page hidden">
+            <!-- Rating Summary Section -->
+            <div class="rating-summary-section">
+              <h2 class="rating-summary-title">⭐ Rating Summary</h2>
+              <p class="rating-summary-text">★★★★★4.7 out of 5 (213 Reviews)</p>
+            </div>
+
+            <!-- Recent Reviews Section -->
+            <div class="recent-reviews-section">
+              <div class="section-divider">
+                <div class="divider-line"></div>
+                <h2 class="divider-text">Recent Reviews</h2>
+                <div class="divider-line"></div>
+              </div>
+
+              <div class="reviews-container">
+                <div class="reviews-list">
+                  <!-- Review 1 -->
+                  <div class="review-item">
+                    <div class="review-header">
+                      <h3 class="reviewer-name">John D. — ★★★★★</h3>
+                      <p class="review-text">
+                        Great quality and fast delivery! Highly recommend this
+                        seller.
+                      </p>
+                    </div>
+                    <button
+                      class="btn btn-primary review-reply-btn font-work-sans"
+                    >
+                      Reply
+                    </button>
+                    <div class="review-divider"></div>
+                  </div>
+
+                  <!-- Review 2 -->
+                  <div class="review-item">
+                    <div class="review-header">
+                      <h3 class="reviewer-name">Sarah K. — ★★★★☆</h3>
+                      <p class="review-text">
+                        The product is good, but the packaging could be
+                        improved.
+                      </p>
+                    </div>
+                    <button
+                      class="btn btn-primary review-reply-btn font-work-sans"
+                    >
+                      Reply
+                    </button>
+                    <div class="review-divider"></div>
+                  </div>
+
+                  <!-- Review 3 -->
+                  <div class="review-item">
+                    <div class="review-header">
+                      <h3 class="reviewer-name">Mike T. — ★★★☆☆</h3>
+                      <p class="review-text">
+                        It arrived late, but support was helpful in resolving
+                        the issue.
+                      </p>
+                    </div>
+                    <button
+                      class="btn btn-primary review-reply-btn font-work-sans"
+                    >
+                      Reply
+                    </button>
+                    <div class="review-divider"></div>
+                  </div>
+
+                  <!-- Review 4 -->
+                  <div class="review-item">
+                    <div class="review-header">
+                      <h3 class="reviewer-name">Kay G. — ★★★☆☆</h3>
+                      <p class="review-text">
+                        It arrived late, but support was helpful in resolving
+                        the issue.
+                      </p>
+                    </div>
+                    <button
+                      class="btn btn-primary review-reply-btn font-work-sans"
+                    >
+                      Reply
+                    </button>
+                    <div class="review-divider"></div>
+                  </div>
+
+                  <!-- Review 5 -->
+                  <div class="review-item">
+                    <div class="review-header">
+                      <h3 class="reviewer-name">Jude G. — ★★★★☆</h3>
+                      <p class="review-text">
+                        The product is good, but the packaging could be
+                        improved.
+                      </p>
+                    </div>
+                    <button
+                      class="btn btn-primary review-reply-btn font-work-sans"
+                    >
+                      Reply
+                    </button>
+                    <div class="review-divider"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chat Page -->
+          <div id="chatPage" class="page hidden">
+            <div class="chat-container">
+              <div class="messages-section">
+                <h2 class="messages-title">Messages</h2>
+
+                <div class="conversation-list">
+                  <div class="conversation-item">
+                    <div class="avatar-container">
+                      <div
+                        class="avatar"
+                        style="
+                          background-image: url('https://api.builder.io/api/v1/image/assets/TEMP/db0a2abcd178431b4ba6c45d5c2b23baa3046222?width=96');
+                        "
+                      ></div>
+                      <div class="online-indicator"></div>
+                    </div>
+
+                    <div class="conversation-content">
+                      <div class="conversation-header">
+                        <div class="conversation-name-container">
+                          <h3 class="conversation-name">TechHub Electronics</h3>
+                          <div class="verified-badge">
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_387_722)">
+                                <path
+                                  d="M10.9005 4.99975C11.1289 6.1204 10.9662 7.28546 10.4395 8.30065C9.91279 9.31583 9.054 10.1198 8.00631 10.5784C6.95862 11.037 5.78536 11.1226 4.6822 10.8209C3.57904 10.5192 2.61265 9.84845 1.94419 8.92046C1.27573 7.99247 0.945611 6.86337 1.00888 5.72144C1.07215 4.57952 1.52499 3.4938 2.29188 2.64534C3.05876 1.79688 4.09334 1.23697 5.22308 1.05898C6.35282 0.880989 7.50944 1.09568 8.50005 1.66725"
+                                  fill="#DCFCE7"
+                                />
+                                <path
+                                  d="M10.9005 4.99975C11.1289 6.1204 10.9662 7.28546 10.4395 8.30065C9.91279 9.31583 9.054 10.1198 8.00631 10.5784C6.95862 11.037 5.78536 11.1226 4.6822 10.8209C3.57904 10.5192 2.61265 9.84845 1.94419 8.92046C1.27573 7.99247 0.945611 6.86337 1.00888 5.72144C1.07215 4.57952 1.52499 3.4938 2.29188 2.64534C3.05876 1.79688 4.09334 1.23697 5.22308 1.05898C6.35282 0.880989 7.50944 1.09568 8.50005 1.66725"
+                                  stroke="black"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path d="M4.5 5.5L6 7L11 2" fill="#DCFCE7" />
+                                <path
+                                  d="M4.5 5.5L6 7L11 2"
+                                  stroke="black"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_387_722">
+                                  <rect width="12" height="12" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                        <span class="conversation-time">2m ago</span>
+                      </div>
+
+                      <div class="conversation-footer">
+                        <p class="conversation-message">
+                          Yes, we have that model in stock
+                        </p>
+                        <div class="unread-badge">
+                          <span class="unread-count">2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="conversation-item">
+                    <div class="avatar-container">
+                      <div
+                        class="avatar"
+                        style="
+                          background-image: url('https://api.builder.io/api/v1/image/assets/TEMP/fe70c7088e9ea7308ee51e824e029fe088803f83?width=96');
+                        "
+                      ></div>
+                      <div class="online-indicator"></div>
+                    </div>
+
+                    <div class="conversation-content">
+                      <div class="conversation-header">
+                        <div class="conversation-name-container">
+                          <h3 class="conversation-name">Fashion Palace</h3>
+                          <div class="verified-badge">
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_387_722)">
+                                <path
+                                  d="M10.9005 4.99975C11.1289 6.1204 10.9662 7.28546 10.4395 8.30065C9.91279 9.31583 9.054 10.1198 8.00631 10.5784C6.95862 11.037 5.78536 11.1226 4.6822 10.8209C3.57904 10.5192 2.61265 9.84845 1.94419 8.92046C1.27573 7.99247 0.945611 6.86337 1.00888 5.72144C1.07215 4.57952 1.52499 3.4938 2.29188 2.64534C3.05876 1.79688 4.09334 1.23697 5.22308 1.05898C6.35282 0.880989 7.50944 1.09568 8.50005 1.66725"
+                                  fill="#DCFCE7"
+                                />
+                                <path
+                                  d="M10.9005 4.99975C11.1289 6.1204 10.9662 7.28546 10.4395 8.30065C9.91279 9.31583 9.054 10.1198 8.00631 10.5784C6.95862 11.037 5.78536 11.1226 4.6822 10.8209C3.57904 10.5192 2.61265 9.84845 1.94419 8.92046C1.27573 7.99247 0.945611 6.86337 1.00888 5.72144C1.07215 4.57952 1.52499 3.4938 2.29188 2.64534C3.05876 1.79688 4.09334 1.23697 5.22308 1.05898C6.35282 0.880989 7.50944 1.09568 8.50005 1.66725"
+                                  stroke="black"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path d="M4.5 5.5L6 7L11 2" fill="#DCFCE7" />
+                                <path
+                                  d="M4.5 5.5L6 7L11 2"
+                                  stroke="black"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_387_722">
+                                  <rect width="12" height="12" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                        <span class="conversation-time">1hago</span>
+                      </div>
+
+                      <div class="conversation-footer">
+                        <p class="conversation-message">
+                          The blue one is out of stock , but we have in,,,,,
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="conversation-item">
+                    <div class="avatar-container">
+                      <div
+                        class="avatar"
+                        style="
+                          background-image: url('https://api.builder.io/api/v1/image/assets/TEMP/3e60dbf5f41421c3e4f5007163e8353550645b24?width=96');
+                        "
+                      ></div>
+                      <div class="online-indicator"></div>
+                    </div>
+
+                    <div class="conversation-content">
+                      <div class="conversation-header">
+                        <div class="conversation-name-container">
+                          <h3 class="conversation-name">Quality Furniture</h3>
+                          <div class="verified-badge">
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_387_722)">
+                                <path
+                                  d="M10.9005 4.99975C11.1289 6.1204 10.9662 7.28546 10.4395 8.30065C9.91279 9.31583 9.054 10.1198 8.00631 10.5784C6.95862 11.037 5.78536 11.1226 4.6822 10.8209C3.57904 10.5192 2.61265 9.84845 1.94419 8.92046C1.27573 7.99247 0.945611 6.86337 1.00888 5.72144C1.07215 4.57952 1.52499 3.4938 2.29188 2.64534C3.05876 1.79688 4.09334 1.23697 5.22308 1.05898C6.35282 0.880989 7.50944 1.09568 8.50005 1.66725"
+                                  fill="#DCFCE7"
+                                />
+                                <path
+                                  d="M10.9005 4.99975C11.1289 6.1204 10.9662 7.28546 10.4395 8.30065C9.91279 9.31583 9.054 10.1198 8.00631 10.5784C6.95862 11.037 5.78536 11.1226 4.6822 10.8209C3.57904 10.5192 2.61265 9.84845 1.94419 8.92046C1.27573 7.99247 0.945611 6.86337 1.00888 5.72144C1.07215 4.57952 1.52499 3.4938 2.29188 2.64534C3.05876 1.79688 4.09334 1.23697 5.22308 1.05898C6.35282 0.880989 7.50944 1.09568 8.50005 1.66725"
+                                  stroke="black"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path d="M4.5 5.5L6 7L11 2" fill="#DCFCE7" />
+                                <path
+                                  d="M4.5 5.5L6 7L11 2"
+                                  stroke="black"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_387_722">
+                                  <rect width="12" height="12" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                        <span class="conversation-time">3h ago</span>
+                      </div>
+
+                      <div class="conversation-footer">
+                        <p class="conversation-message">
+                          We can deliver next week
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- Floating Action Button (only on home) -->
+        <button id="fab" class="fab" style="display: none">
+          <svg
+            width="29"
+            height="29"
+            viewBox="0 0 31 31"
+            fill="none"
+            class="text-white"
+          >
+            <path
+              d="M9.375 25.3002C8.35417 25.3002 7.48646 24.9429 6.77188 24.2283C6.0573 23.5137 5.7 22.646 5.7 21.6252H4.13813C3.79105 21.6252 3.4999 21.5076 3.2647 21.2724C3.0295 21.0372 2.91231 20.7465 2.91313 20.4002C2.91395 20.0539 3.03155 19.7632 3.26593 19.528C3.50031 19.2928 3.79105 19.1752 4.13813 19.1752H6.64938C6.99646 18.7873 7.4048 18.4863 7.87438 18.2724C8.34396 18.0584 8.84417 17.951 9.375 17.9502C9.90584 17.9494 10.406 18.0568 10.8756 18.2724C11.3452 18.488 11.7535 18.7889 12.1006 19.1752H17.215L19.7875 8.1502H7.84375C7.49667 8.1502 7.20594 8.0326 6.97155 7.7974C6.73717 7.5622 6.61957 7.27146 6.61875 6.9252C6.61794 6.57893 6.73554 6.2882 6.97155 6.053C7.20757 5.8178 7.4983 5.7002 7.84375 5.7002H21.3188C21.7271 5.7002 22.0538 5.85332 22.2988 6.15957C22.5438 6.46582 22.6152 6.8129 22.5131 7.20082L21.7169 10.6002H24.075C24.4629 10.6002 24.8304 10.6872 25.1775 10.8611C25.5246 11.0351 25.8104 11.2748 26.035 11.5802L28.3319 14.6121C28.5565 14.8979 28.6994 15.2095 28.7606 15.5467C28.8219 15.884 28.8219 16.2258 28.7606 16.5721L27.9338 20.6452C27.8725 20.931 27.7296 21.1658 27.505 21.3496C27.2804 21.5333 27.0252 21.6252 26.7394 21.6252H25.3C25.3 22.646 24.9427 23.5137 24.2281 24.2283C23.5135 24.9429 22.6458 25.3002 21.625 25.3002C20.6042 25.3002 19.7365 24.9429 19.0219 24.2283C18.3073 23.5137 17.95 22.646 17.95 21.6252H13.05C13.05 22.646 12.6927 23.5137 11.9781 24.2283C11.2635 24.9429 10.3958 25.3002 9.375 25.3002Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+          <div class="nav-container">
+            <a
+              href="#"
+              class="nav-item active"
+              data-page="home"
+              onclick="navigateTo('home')"
+            >
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="currentColor"
+              >
+                <path
+                  d="M2.125 15.1111H5.3125V9.44444H11.6875V15.1111H14.875V6.61111L8.5 2.36111L2.125 6.61111V15.1111ZM0 17V5.66667L8.5 0L17 5.66667V17H9.5625V11.3333H7.4375V17H0Z"
+                />
+              </svg>
+              <span>Home</span>
+            </a>
+
+            <a
+              href="#"
+              class="nav-item"
+              data-page="market"
+              onclick="navigateTo('market')"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M3 10.9346H7V17.9346H3V10.9346ZM10 7.93457H14V20.9346H10V7.93457Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 22.9346V20.9346"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 6.93457H21V11.4346H17V6.93457Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5 10.9346V5.93457M19 17.9346V11.4346M19 6.93457V2.93457"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Market</span>
+            </a>
+
+            <a
+              href="#"
+              class="nav-item"
+              data-page="live"
+              onclick="navigateTo('live')"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M6.54363 5.50065C6.46352 5.41891 6.36808 5.35376 6.26278 5.30891C6.15747 5.26407 6.04436 5.24041 5.92992 5.2393C5.81547 5.23818 5.70192 5.25963 5.59576 5.30242C5.4896 5.3452 5.39292 5.40849 5.31123 5.48865C4.38744 6.40755 3.65461 7.50016 3.15497 8.70354C2.65533 9.90692 2.39875 11.1973 2.40003 12.5003C2.39867 13.8533 2.67534 15.1921 3.21287 16.4338C3.7504 17.6754 4.53733 18.7933 5.52483 19.7183C5.69105 19.8719 5.91062 19.9547 6.13692 19.9491C6.36321 19.9435 6.57841 19.8499 6.73683 19.6883C7.11603 19.3091 7.06923 18.7055 6.70443 18.3563C5.91183 17.6009 5.2811 16.6923 4.85057 15.6856C4.42004 14.6789 4.19871 13.5951 4.20003 12.5003C4.20003 10.2851 5.08923 8.27625 6.53163 6.81465C6.87963 6.46065 6.91563 5.87265 6.54363 5.50065Z"
+                />
+              </svg>
+              <span>Live</span>
+            </a>
+
+            <a
+              href="#"
+              class="nav-item"
+              data-page="chat"
+              onclick="navigateTo('chat')"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M5.6 19.92L7.124 18.701L7.134 18.693C7.452 18.438 7.613 18.31 7.792 18.219C7.95267 18.137 8.122 18.0777 8.3 18.041C8.499 18 8.706 18 9.122 18H17.803C18.921 18 19.481 18 19.908 17.782C20.2843 17.5903 20.5903 17.2843 20.782 16.908C21 16.48 21 15.92 21 14.804V7.197C21 6.079 21 5.519 20.782 5.092C20.59 4.71554 20.2837 4.40957 19.907 4.218C19.48 4 18.92 4 17.8 4H6.2C5.08 4 4.52 4 4.092 4.218C3.71569 4.40974 3.40974 4.71569 3.218 5.092C3 5.52 3 6.08 3 7.2V18.671C3 19.737 3 20.27 3.218 20.543C3.31174 20.6607 3.43083 20.7557 3.56641 20.821C3.70198 20.8863 3.85053 20.9201 4.001 20.92C4.351 20.92 4.767 20.586 5.6 19.92Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Chat</span>
+            </a>
+
+            <a
+              href="#"
+              class="nav-item"
+              data-page="shop"
+              onclick="navigateTo('shop')"
+            >
+              <svg width="24" height="24" viewBox="0 0 25 25" fill="none">
+                <path
+                  d="M9.375 25.3002C8.35417 25.3002 7.48646 24.9429 6.77188 24.2283C6.0573 23.5137 5.7 22.646 5.7 21.6252H4.13813C3.79105 21.6252 3.4999 21.5076 3.2647 21.2724C3.0295 21.0372 2.91231 20.7465 2.91313 20.4002C2.91395 20.0539 3.03155 19.7632 3.26593 19.528C3.50031 19.2928 3.79105 19.1752 4.13813 19.1752H6.64938C6.99646 18.7873 7.4048 18.4863 7.87438 18.2724C8.34396 18.0584 8.84417 17.951 9.375 17.9502C9.90584 17.9494 10.406 18.0568 10.8756 18.2724C11.3452 18.488 11.7535 18.7889 12.1006 19.1752H17.215L19.7875 8.1502H7.84375C7.49667 8.1502 7.20594 8.0326 6.97155 7.7974C6.73717 7.5622 6.61957 7.27146 6.61875 6.9252C6.61794 6.57893 6.73554 6.2882 6.97155 6.053C7.20757 5.8178 7.4983 5.7002 7.84375 5.7002H21.3188C21.7271 5.7002 22.0538 5.85332 22.2988 6.15957C22.5438 6.46582 22.6152 6.8129 22.5131 7.20082L21.7169 10.6002H24.075C24.4629 10.6002 24.8304 10.6872 25.1775 10.8611C25.5246 11.0351 25.8104 11.2748 26.035 11.5802L28.3319 14.6121C28.5565 14.8979 28.6994 15.2095 28.7606 15.5467C28.8219 15.884 28.8219 16.2258 28.7606 16.5721L27.9338 20.6452C27.8725 20.931 27.7296 21.1658 27.505 21.3496C27.2804 21.5333 27.0252 21.6252 26.7394 21.6252H25.3C25.3 22.646 24.9427 23.5137 24.2281 24.2283C23.5135 24.9429 22.6458 25.3002 21.625 25.3002C20.6042 25.3002 19.7365 24.9429 19.0219 24.2283C18.3073 23.5137 17.95 22.646 17.95 21.6252H13.05C13.05 22.646 12.6927 23.5137 11.9781 24.2283C11.2635 24.9429 10.3958 25.3002 9.375 25.3002Z"
+                  fill="white"
+                />
+              </svg>
+              <span>Shop</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
